@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>A Simple Calculator</title>
+    <script defer src="website.js">
+    </script>
+    <style>
+        h1{text-align: center}
+        p{text-align: center}
+    </style>
+</head>
+
+<body bgcolor="#fff8dc">
+    <h1>A Simple Calculator</h1>
+    <p>This is a very simple calculator.
+    <br>You just need to type in your expression or click the button.
+
+    </p>
+    <!--图形化计算器-->
+    <table border="1" align="center" bgcolor="white"
+           style="height: 350px;width: 270px">
+        <tr>
+            <td colspan="4" align="center">
+                <input type="text" id="nummessage"
+                       style="height: 90px;width:370px;font-size:50px">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <input type="button" value="1" id="1" onclick="clicknumber(1)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="2" id="2" onclick="clicknumber(2)"
+                         style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="3" id="3" onclick="clicknumber(3)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="+" id="plus" onclick="clicknumber('+')"
+                        style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <input type="button" value="4" id="4" onclick="clicknumber(4)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="5" id="5" onclick="clicknumber(5)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="6" id="6" onclick="clicknumber(6)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                 <input type="button" value="-" id="minus" onclick="clicknumber('-')"
+                         style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <input type="button" value="7" id="7" onclick="clicknumber(7)"
+                       style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="8" id="8" onclick="clicknumber(8)"
+                       style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="9" id="9" onclick="clicknumber(9)"
+                       style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="*" id="multiple" onclick="clicknumber('*')"
+                       style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="0" id="0" onclick="clicknumber(0)"
+                       style="height: 70px; width: 190px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="." id="." onclick="clicknumber('.')"
+                       style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+
+            <td align="center">
+                <input type="button" value="/" id="division" onclick="clicknumber('/')"
+                       style="height: 70px; width: 90px; font-size: 35px">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="Clear" id="clear" onclick="clickclear()"
+                       style="height: 70px; width: 190px; font-size: 35px"/>
+            </td>
+
+            <td colspan="2" align="center">
+                <input type="button" value="=" id="result" onclick="clickresult()"
+                       style="height: 70px; width: 190px; font-size: 35px"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
